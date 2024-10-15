@@ -50,6 +50,21 @@ router.post('/', createUser);
 router.post('/login', loginUser);
 
 //Ruta protegida
+/**
+   * @openapi
+   * '/api/users/test':
+   *  get:
+   *     tags:
+   *     - User
+   *     summary: "Test endpoint for secured routes. Returns user details."
+   *     requestBody:
+   *      required: false
+   *     responses:
+   *      200:
+   *        description: "Succesful token validation!"
+   *      404:
+   *        description: "Error"
+   */
 router.get('/test', validateToken, test);
 
 

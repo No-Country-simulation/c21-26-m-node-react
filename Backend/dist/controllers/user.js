@@ -24,6 +24,7 @@ const createUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
     const user = yield user_1.User.findOne({ where: { email } });
     if (user) {
         res.status(400).json({ msg: "Something went wrong" });
+        return;
     }
     const hashedPassword = yield bcrypt_1.default.hash(password, 10);
     try {
@@ -37,8 +38,9 @@ const createUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
             password: hashedPassword,
         });
         res.status(201).json({
-            msg: `Succes! New user registered `,
+            msg: `Succes! New user registered `
         });
+        return;
     }
     catch (error) {
         res.status(400).json({
@@ -55,6 +57,7 @@ const loginUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         res.status(400).json({
             msg: 'No existe'
         });
+        return;
     }
     //Pass correcto??
     try {
@@ -63,6 +66,7 @@ const loginUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             res.status(400).json({
                 msg: 'password no coincide'
             });
+            return;
         }
         // Success, enviar token
         const token = jsonwebtoken_1.default.sign({
@@ -78,8 +82,26 @@ const loginUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
 });
 exports.loginUser = loginUser;
 const test = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.json({
-        msg: 'Se ejecuta la funcion protegida'
-    });
+    console.log(req.headers);
+    const headerToken = req.headers['authorization'];
+    if (headerToken != undefined && headerToken.startsWith('Bearer')) {
+        try {
+            const bearerToken = headerToken.slice(7);
+            const decoded = jsonwebtoken_1.default.verify(bearerToken, secret_key);
+            const email = decoded.email;
+            const user = yield user_1.User.findOne({ where: { email: email } });
+            res.status(200).json({
+                id: `${user.id}`,
+                firstname: `${user.firstname}`,
+                lastname: `${user.lastname}`,
+                email: `${user.email}`
+            });
+        }
+        catch (error) {
+            res.status(401).json({
+                msg: 'Unauthorized'
+            });
+        }
+    }
 });
 exports.test = test;

@@ -14,6 +14,7 @@ export const createUser = async (req: Request, res: Response) =>{
 
     if (user) {
     res.status(400).json({ msg: "Something went wrong" });
+    return;
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -29,9 +30,8 @@ export const createUser = async (req: Request, res: Response) =>{
             password: hashedPassword,
           })
           res.status(201).json({
-            msg: `Succes! New user registered `,
-            
-        });
+            msg: `Succes! New user registered `});
+            return;
 
     } catch (error) {
         res.status(400).json({
@@ -49,16 +49,16 @@ const user:any = await User.findOne({ where: { email } });
 
 if (!user){
     res.status(400).json({
-        msg: 'No existe'
-    })
+        msg: 'No existe'});
+    return;
 }
 //Pass correcto??
 try{
     const passwordValid = await bcrypt.compare(password, user.password );
    if(!passwordValid) {
     res.status(400).json({
-        msg: 'password no coincide'
-    })
+        msg: 'password no coincide'})
+        return;
    }
 
    // Success, enviar token
@@ -79,7 +79,33 @@ try{
 };
 
 export const test = async (req: Request, res: Response) =>{
-    res.json({
-        msg: 'Se ejecuta la funcion protegida'
-    })
+    console.log(req.headers);
+    const headerToken = req.headers['authorization'];
+    type myToken = {
+        email: string
+    }
+
+    if (headerToken !=undefined && headerToken.startsWith('Bearer')){
+        try{
+            const bearerToken=headerToken.slice(7);
+            const decoded = jwt.verify(bearerToken, secret_key) as myToken;
+            const email =decoded.email;
+            const user: any = await User.findOne({ where: {email : email}});
+
+            res.status(200).json({
+                id : `${user.id}`,
+                firstname : `${user.firstname}`,
+                lastname : `${user.lastname}`,
+                email : `${user.email}`
+                
+            })
+        }
+
+        catch (error) {
+            
+            res.status(401).json({
+                msg: 'Unauthorized'
+            })
+        }
+    } 
 }
