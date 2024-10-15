@@ -29,7 +29,7 @@ exports.User = connection_1.default.define('user', {
         allowNull: false
     },
     phone: {
-        type: sequelize_1.DataTypes.INTEGER,
+        type: sequelize_1.DataTypes.STRING,
         allowNull: false
     },
     email: {

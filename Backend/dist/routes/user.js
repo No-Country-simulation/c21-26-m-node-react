@@ -24,10 +24,6 @@ const router = (0, express_1.default)();
    *     responses:
    *      201:
    *        description: Success! New user registered
-   *        content:
-   *          application/json:
-   *            schema:
-   *              $ref: '#/components/schemas/CreateUserResponse'
    *      400:
    *        description: Something went wrong.
    */

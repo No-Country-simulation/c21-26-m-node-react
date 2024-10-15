@@ -40,9 +40,9 @@ import swaggerJsDoc from "swagger-jsdoc"
  *       example:
  *         firstname: John
  *         lastname: Doe
- *         date of birth: 1998-01-21
+ *         dob: 1998-01-21
  *         address: Elm Street 123
- *         phone number: 381155202020
+ *         phone: 381155202020
  *         email: johndoe@gmail.com
  *         password: strongpassword
  *     CreateUserResponse:

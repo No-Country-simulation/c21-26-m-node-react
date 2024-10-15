@@ -5,7 +5,6 @@ import validateToken from './validate-token';
 
 const router = Router();
 
-
 //Ruta de registro
 /**
    * @openapi
@@ -23,10 +22,6 @@ const router = Router();
    *     responses:
    *      201:
    *        description: Success! New user registered
-   *        content:
-   *          application/json:
-   *            schema:
-   *              $ref: '#/components/schemas/CreateUserResponse'
    *      400:
    *        description: Something went wrong.
    */
@@ -53,6 +48,7 @@ router.post('/', createUser);
    *        description: "Email and/or Password invalid(s)"
    */
 router.post('/login', loginUser);
+
 //Ruta protegida
 router.get('/test', validateToken, test);
 
