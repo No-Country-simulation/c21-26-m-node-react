@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "date": "2024-04-10",
+    "time": "10:00 AM",
+    "doctorId": 1,
+    "patientId": 1,
+    "reason": "Revisión anual",
+    "location": "Clínica Centro, Sala 204",
+    "isPast": false,
+    "appointmentType": "Consultation"
+  },
+  {
+    "id": 2,
+    "date": "2024-05-15",
+    "time": "02:30 PM",
+    "doctorId": 2,
+    "patientId": 1,
+    "reason": "Consulta de seguimiento",
+    "location": "Virtual vía Zoom",
+    "isPast": false,
+    "appointmentType": "Follow-up"
+  },
+  {
+    "id": 3,
+    "date": "2023-12-20",
+    "time": "09:00 AM",
+    "doctorId": 3,
+    "patientId": 2,
+    "reason": "Tratamiento de migrañas",
+    "location": "Clínica Centro, Sala 101",
+    "isPast": true,
+    "appointmentType": "Consultation"
+  },
+  {
+    "id": 4,
+    "date": "2024-01-25",
+    "time": "11:00 AM",
+    "doctorId": 4,
+    "patientId": 2,
+    "reason": "Chequeo pediátrico",
+    "location": "Clínica Infantil, Sala 305",
+    "isPast": false,
+    "appointmentType": "Follow-up"
+  },
+  {
+    "id": 5,
+    "date": "2024-03-05",
+    "time": "03:00 PM",
+    "doctorId": 1,
+    "patientId": 3,
+    "reason": "Control de diabetes",
+    "location": "Clínica Centro, Sala 204",
+    "isPast": false,
+    "appointmentType": "Consultation"
+  },
+  {
+    "id": 6,
+    "date": "2024-04-12",
+    "time": "01:30 PM",
+    "doctorId": 2,
+    "patientId": 3,
+    "reason": "Consulta de seguimiento",
+    "location": "Virtual vía Zoom",
+    "isPast": false,
+    "appointmentType": "Follow-up"
+  },
+  {
+    "id": 7,
+    "date": "2023-11-18",
+    "time": "10:30 AM",
+    "doctorId": 3,
+    "patientId": 4,
+    "reason": "Tratamiento de EPOC",
+    "location": "Clínica Respiratoria, Sala 402",
+    "isPast": true,
+    "appointmentType": "Consultation"
+  },
+  {
+    "id": 8,
+    "date": "2024-02-22",
+    "time": "02:00 PM",
+    "doctorId": 4,
+    "patientId": 4,
+    "reason": "Consulta de ansiedad",
+    "location": "Clínica Mental, Sala 108",
+    "isPast": false,
+    "appointmentType": "Follow-up"
+  },
+  {
+    "id": 9,
+    "date": "2024-06-15",
+    "time": "09:30 AM",
+    "doctorId": 1,
+    "patientId": 5,
+    "reason": "Revisión cardiológica",
+    "location": "Clínica Centro, Sala 204",
+    "isPast": false,
+    "appointmentType": "Consultation"
+  },
+  {
+    "id": 10,
+    "date": "2024-07-20",
+    "time": "04:00 PM",
+    "doctorId": 2,
+    "patientId": 5,
+    "reason": "Consulta dermatológica",
+    "location": "Clínica Dermatológica, Sala 210",
+    "isPast": false,
+    "appointmentType": "Follow-up"
+  }
+]

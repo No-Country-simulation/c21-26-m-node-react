@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "appointmentId": 1,
+    "date": "2024-01-15",
+    "diagnosis": "Diabetes Mellitus Tipo 2",
+    "prescriptions": ["Metformina 500mg", "Glipizida 5mg"],
+    "notes": "El paciente debe monitorear sus niveles de glucosa diariamente y seguir una dieta baja en carbohidratos.",
+    "attachments": ["/documents/diabetes-report-2024-01-15.pdf"]
+  },
+  {
+    "id": 2,
+    "appointmentId": 2,
+    "date": "2024-03-22",
+    "diagnosis": "Hipertensión Arterial",
+    "prescriptions": ["Lisinopril 10mg", "Amlodipino 5mg"],
+    "notes": "Se recomienda reducir el consumo de sal y aumentar la actividad física.",
+    "attachments": [
+      "/documents/hypertension-report-2024-03-22.pdf",
+      "/documents/lab-results-2024-03-22.pdf"
+    ]
+  },
+  {
+    "id": 3,
+    "appointmentId": 3,
+    "date": "2024-06-10",
+    "diagnosis": "Asma Bronquial",
+    "prescriptions": ["Salbutamol Inhalador", "Budesonida Inhalador"],
+    "notes": "Evitar alérgenos conocidos y realizar controles periódicos de la función pulmonar.",
+    "attachments": ["/documents/asthma-report-2024-06-10.pdf"]
+  },
+  {
+    "id": 4,
+    "appointmentId": 4,
+    "date": "2024-09-05",
+    "diagnosis": "Gastritis",
+    "prescriptions": ["Omeprazol 20mg", "Ranitidina 150mg"],
+    "notes": "Tomar los medicamentos antes de las comidas y evitar alimentos irritantes como café y alcohol.",
+    "attachments": [
+      "/documents/gastritis-report-2024-09-05.pdf",
+      "/documents/endoscopy-results-2024-09-05.pdf"
+    ]
+  }
+]

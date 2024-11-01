@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Juan Pérez",
+    "email": "juan.perez@example.com",
+    "password": "123456",
+    "age": 35,
+    "phone": "321-654-0987",
+    "address": "654 Calle Cuarta, Ciudad, País",
+    "profilePicture": "https://example.com/profiles/juan_perez.jpg",
+    "lastAppointment": "2023-10-05",
+    "sharedData": true
+  },
+  {
+    "id": 2,
+    "name": "María García",
+    "email": "maria.garcia@example.com",
+    "password": "123456",
+    "age": 40,
+    "phone": "210-987-6543",
+    "address": "987 Avenida Quinta, Ciudad, País",
+    "lastAppointment": "2023-09-28",
+    "sharedData": true
+  },
+  {
+    "id": 3,
+    "name": "Carlos Sánchez",
+    "email": "carlos.sanchez@example.com",
+    "password": "123456",
+    "age": 28,
+    "phone": "678-123-4567",
+    "address": "159 Calle Sexta, Ciudad, País",
+    "lastAppointment": "2024-01-15",
+    "sharedData": false
+  },
+  {
+    "id": 4,
+    "name": "Ana Rodríguez",
+    "email": "ana.rodriguez@example.com",
+    "password": "123456",
+    "age": 50,
+    "phone": "345-678-9012",
+    "address": "753 Avenida Séptima, Ciudad, País",
+    "profilePicture": "",
+    "lastAppointment": "2024-03-22"
+  },
+  {
+    "id": 5,
+    "name": "Luis Martínez",
+    "email": "luis.martinez@example.com",
+    "password": "123456",
+    "age": 45,
+    "phone": "890-123-4567",
+    "address": "852 Calle Octava, Ciudad, País"
+  }
+]

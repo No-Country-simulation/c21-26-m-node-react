@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Juan García",
+    "email": "juan.garcia@clinic.com",
+    "age": 45,
+    "phone": "123-456-7890",
+    "address": "123 Calle Principal, Ciudad, País",
+    "profilePicture": "https://example.com/profiles/juan_garcia.jpg",
+    "specialty": "Cardiología",
+    "rating": 4.7,
+    "reviewsCount": 150,
+    "consultations": 500,
+    "pricePer30Min": 120,
+    "availableTimes": ["09:00 AM", "10:30 AM", "02:00 PM", "04:00 PM"]
+  },
+  {
+    "id": 2,
+    "name": "Dra. María López",
+    "email": "maria.lopez@clinic.com",
+    "age": 38,
+    "phone": "098-765-4321",
+    "address": "456 Avenida Secundaria, Ciudad, País",
+    "profilePicture": "",
+    "specialty": "Dermatología",
+    "rating": 4.5,
+    "reviewsCount": 85,
+    "consultations": 300,
+    "pricePer30Min": 90,
+    "availableTimes": ["08:00 AM", "11:00 AM", "01:30 PM", "03:30 PM"]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Carlos Mendoza",
+    "email": "carlos.mendoza@clinic.com",
+    "age": 50,
+    "phone": "555-123-4567",
+    "address": "789 Boulevard Central, Ciudad, País",
+    "specialty": "Neurología",
+    "rating": 4.9,
+    "reviewsCount": 200,
+    "consultations": 750,
+    "pricePer30Min": 150
+  },
+  {
+    "id": 4,
+    "name": "Dra. Laura Fernández",
+    "email": "laura.fernandez@clinic.com",
+    "age": 42,
+    "phone": "444-567-8901",
+    "address": "321 Calle Terciaria, Ciudad, País",
+    "profilePicture": "https://example.com/profiles/laura_fernandez.jpg",
+    "specialty": "Pediatría",
+    "rating": 4.8,
+    "reviewsCount": 120,
+    "consultations": 600,
+    "pricePer30Min": 110,
+    "availableTimes": ["10:00 AM", "12:30 PM", "03:00 PM", "05:00 PM"]
+  }
+]
